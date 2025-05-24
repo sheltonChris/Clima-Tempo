@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando APIs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="source/imgs/weather.svg" alt="imagem logo">Clima Tempo</h1>
+            <form id="dados-cidade">
+                <input type="search" id="pesquisar" placeholder="Digite o nome da cidade:">
+                <button type="submit">Pesquisar</button>
+            </form>
+                <div class="login">
+                    <a href="#">Login</a>
+                <a href="#">Cadastrar</a>
+                </div>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#"><img src="./source/imgs/home.svg" alt="logo-home"> Inicio</a></li>
+            <li><a href="#"><img src="./source/imgs/weather.svg" alt="logo-weather"> Previsão do tempo</a></li>
+            <li><a href="#"><img src="./source/imgs/send-round-1569-svgrepo-com.svg" alt="logo-send"> Contate-nos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+            <div class="clima-tempo">
+                <video id="clima-video" muted loop autoplay></video>
+                <h1 id="nome-cidade"></h1>
+                <h2 id="temperatura"></h2>
+                <p id="clima"></p>
+            </div>
+            <div class="noticias">
+            </div>
+    </main>
+    <footer>
+        <p>Todos os Direitos reservados</p>
+        <p>Criado por Shelton Cristian</p>
+        <ul>
+            <li><a href="https://www.instagram.com/shelton.cristian/#" rel="noopener" target="_blank"><img src="source/imgs/logos/instagram-svgrepo-com.svg" alt="logo Instagram"></a>
+            </li>
+            <li><a href="#" target="_blank"><img src="source/imgs/logos/github-svgrepo-com.svg" alt="logo github"></a></li>
+            <li><a href="#" target="_blank"><img src="source/imgs/logos/linkedin-linked-in-svgrepo-com.svg" alt="logo linkedin"></a>
+            </li>
+        </ul>
+    </footer>
+    <script type="module" src="test.js"></script>
+</body>
+
+</html>

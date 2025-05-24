@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #dcd9d9;
+}
+
+header>.container {
+    background-color: #222f3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px 15px 8px;
+    color: #fff;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header>.container h1 img {
+    height: 50px;
+}
+
+header>.container form input {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 2px solid #576574;
+    background-color: #222f3e;
+    color: #fff;
+}
+
+header>.container form input:focus {
+    outline: 1.5px solid #fff;
+}
+
+header>.container form button {
+    padding: 8px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 2px solid #576574;
+    background-color: #222f3e;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+header>.container form button:hover {
+    background-color: #576574;
+}
+
+.login a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 2px solid #576574;
+    background-color: #222f3e;
+    padding: 8px;
+}
+
+.login a:hover {
+    background-color: #576574;
+}
+
+.menu-hamburguer {
+    margin-right: 5px;
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color:#576574;
+    display: block;
+    margin-bottom: 4px ;
+}
+
+.nav-bar {
+    background-color: #576574;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    display: inline-flex;
+    margin: auto 15px;
+    list-style: none;
+    padding-right: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.nav-bar li:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-bar img {
+    height: 23px;
+}
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clima-tempo {
+    position: relative;
+    width: 500px;
+    height: 100%;
+    margin: 70px 5px;
+    padding: 40px;
+}
+
+#clima-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#nome-cidade,
+#temperatura {
+    position: inherit;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+#clima {
+    position: inherit;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.noticias {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.noticias h2 {
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.noticias p {
+    font-size: 20px;
+    margin: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #222f3e;
+    color: #fff;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+}
+
+footer img {
+    height: 25px;
+    padding-left: 5px;
+}
+
+footer img:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:767px) {
+
+    header > .container {
+        display: block
+    }
+
+    header input {
+        margin-bottom: 5px;
+        
+    }
+
+    #dados-cidade {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .login{
+    display:flex;
+    justify-content: center;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .clima-tempo,  .noticias {
+        max-width: 95%;
+        margin: 30px auto;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .clima-tempo,  .noticias {
+        max-width: 90%;
+        margin: 30px auto;
+    }
+}
