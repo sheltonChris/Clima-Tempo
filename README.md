@@ -21,7 +21,7 @@ API OpenWeather
 Clone o repositório:
 
 bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/sheltonChris/Clima-Tempo.git
 
 Acesse a pasta do projeto:
 
