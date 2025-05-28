@@ -1,5 +1,3 @@
-
-
 const form = document.getElementById('dados-cidade');
 const inputCidade = document.getElementById('pesquisar');
 
@@ -144,3 +142,4 @@ async function detalhesClima(nomeCidade) {
     
 
 }
+

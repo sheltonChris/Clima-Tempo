@@ -5,12 +5,21 @@
     font-family: "Roboto", sans-serif;
 }
 
+:root {
+    --cor-primaria:#4a5a81;
+    --cor-secundaria:#041e3f;
+    --cor-terciaria:#273c60;
+    --cor-msg-erro:#f51616;
+    --cor-sucesso:#aaec8a;
+    --notificacao-fundo:#313e2c;
+}
+
 body {
     background-color: #dcd9d9;
 }
 
 header>.container {
-    background-color: #222f3e;
+    background-color: var(--cor-secundaria);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,8 +38,8 @@ header>.container h1 img {
 header>.container form input {
     padding: 8px 20px;
     border-radius: 5px;
-    border: 2px solid #576574;
-    background-color: #222f3e;
+    border: 2px solid var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     color: #fff;
 }
 
@@ -42,48 +51,34 @@ header>.container form button {
     padding: 8px;
     font-weight: bolder;
     border-radius: 5px;
-    border: 2px solid #576574;
-    background-color: #222f3e;
+    border: 2px solid var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     color: #fff;
     cursor: pointer;
     margin-left: 10px;
 }
 
 header>.container form button:hover {
-    background-color: #576574;
+    background-color: var(--cor-primaria);
 }
 
-.login a {
+.login button {
     text-decoration: none;
     color: #fff;
     font-weight: bolder;
     border-radius: 5px;
-    border: 2px solid #576574;
-    background-color: #222f3e;
+    border: 2px solid var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     padding: 8px;
-}
-
-.login a:hover {
-    background-color: #576574;
-}
-
-.menu-hamburguer {
-    margin-right: 5px;
-    width: 35px;
     cursor: pointer;
-    display: none;
 }
 
-.menu-hamburguer span {
-    height: 2px;
-    width: 100%;
-    background-color:#576574;
-    display: block;
-    margin-bottom: 4px ;
+.login button:hover {
+    background-color: var(--cor-primaria);
 }
 
 .nav-bar {
-    background-color: #576574;
+    background-color: var(--cor-primaria);
     padding: 5px;
     position: relative;
     overflow: hidden;
@@ -179,7 +174,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 8px;
-    background-color: #222f3e;
+    background-color: var(--cor-secundaria);
     color: #fff;
 }
 

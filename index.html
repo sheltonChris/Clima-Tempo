@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="modal.css">
 
 </head>
 
@@ -21,10 +22,10 @@
                 <input type="search" id="pesquisar" placeholder="Digite o nome da cidade:">
                 <button type="submit">Pesquisar</button>
             </form>
-                <div class="login">
-                    <a href="#">Login</a>
-                <a href="#">Cadastrar</a>
-                </div>
+            <div class="login" id="login">
+                <button type="button">Login</button>
+                <button type="button">Cadastrar</button>
+            </div>
         </div>
     </header>
     <nav class="nav-bar">
@@ -37,27 +38,67 @@
     </nav>
 
     <main class="container">
-            <div class="clima-tempo">
-                <video id="clima-video" muted loop autoplay></video>
-                <h1 id="nome-cidade"></h1>
-                <h2 id="temperatura"></h2>
-                <p id="clima"></p>
-            </div>
-            <div class="noticias">
-            </div>
+        <div class="clima-tempo">
+            <video id="clima-video" muted loop autoplay></video>
+            <h1 id="nome-cidade"></h1>
+            <h2 id="temperatura"></h2>
+            <p id="clima"></p>
+        </div>
+        <div class="noticias">
+        </div>
+            
     </main>
     <footer>
         <p>Todos os Direitos reservados</p>
         <p>Criado por Shelton Cristian</p>
         <ul>
-            <li><a href="https://www.instagram.com/shelton.cristian/#" rel="noopener" target="_blank"><img src="source/imgs/logos/instagram-svgrepo-com.svg" alt="logo Instagram"></a>
+            <li><a href="https://www.instagram.com/shelton.cristian/#" rel="noopener" target="_blank"><img
+                        src="source/imgs/logos/instagram-svgrepo-com.svg" alt="logo Instagram"></a>
             </li>
-            <li><a href="https://github.com/sheltonChris" rel="noopener" target="_blank"><img src="source/imgs/logos/github-svgrepo-com.svg" alt="logo github"></a></li>
-            <li><a href="https://www.linkedin.com/in/shelton-cristian-da-costa-583939212" rel="noopener" target="_blank"><img src="source/imgs/logos/linkedin-linked-in-svgrepo-com.svg" alt="logo linkedin"></a>
+            <li><a href="https://github.com/sheltonChris" rel="noopener" target="_blank"><img
+                        src="source/imgs/logos/github-svgrepo-com.svg" alt="logo github"></a></li>
+            <li><a href="https://www.linkedin.com/in/shelton-cristian-da-costa-583939212" rel="noopener"
+                    target="_blank"><img src="source/imgs/logos/linkedin-linked-in-svgrepo-com.svg"
+                        alt="logo linkedin"></a>
             </li>
         </ul>
     </footer>
+    </div>
+
+    <section class="login-modal" id="login-modal">
+                <div class="login-container modal">
+                    <button class="fechar" id="fechar">X</button>
+                    <h1><img src="
+                source/imgs/signin_login_in_log_icon_256010.png" id="login-icon" alt="icone de login"> Login</h1>
+                    <form id="form">
+                        <label for="nome">Seu Nome ou E-mail:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome:" required>
+                        <p id="msg-erro-user">Nome de usuário ou email invalido</p>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                        <p id="msg-erro-pass">senha invalida</p>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Mantenha-me conectado</label>
+                        </div>
+                    </form>
+                    <button class="fazer-login" type="submit">Entrar</button>
+                    <p>Esqueceu sua senha. <a href="https://loja-ficticia-recuperar-senha.vercel.app/" target="_blank"
+                            rel="noopener noreferrer">Clique aqui</a></p>
+                    <div class="social-links">
+                        <p><a href="#"><img src="source/imgs/google_logo_icon_169090.png" alt=""> Google</a> ou <a
+                                href="#"><img src="source/imgs/4202110facebooklogosocialsocialmedia-115707_115594.png"
+                                    alt=""> Facebook</a></p>
+                    </div>
+                    <footer>
+                        <p>Não é nosso cliente, <a href="https://loja-ficticia-cadastrar.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">cadastre-se</a></p>
+                    </footer>
+                </div>
+    </section>
+
     <script type="module" src="test.js"></script>
+    <script type="module" src="modal.js"></script>
 </body>
 
 </html>
