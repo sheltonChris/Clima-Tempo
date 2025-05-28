@@ -195,12 +195,7 @@ footer img:hover {
 @media screen and (max-width:767px) {
 
     header > .container {
-        display: block
-    }
-
-    header input {
-        margin-bottom: 5px;
-        
+        display: block;
     }
 
     #dados-cidade {
@@ -209,9 +204,20 @@ footer img:hover {
         justify-content: center;
         margin: 10px;
     }
+
     .login{
-    display:flex;
-    justify-content: center;
+        display:flex;
+        justify-content: center;
+    }
+
+    .login button {
+        margin: 5px;
+    }
+
+    .nav-bar li{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .container {
@@ -219,7 +225,7 @@ footer img:hover {
     }
 
     .clima-tempo,  .noticias {
-        max-width: 95%;
+        max-width: 90%;
         margin: 30px auto;
     }
 

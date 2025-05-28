@@ -37,7 +37,6 @@
 
 .checkbox-container {
     display: flex;
-    align-items: center;
     padding: 5px;
 }
 
@@ -72,10 +71,10 @@ input[type="checkbox"] {
 
 .social-links a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     background-color: var(--cor-primaria);
     border-radius: 30px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .social-links a:hover {
@@ -105,6 +104,7 @@ input[type="checkbox"] {
 .login-modal footer {
     padding: 15px;
     justify-content: center;
+    border-radius: 15px;
 }
 
 .login-modal footer a {
@@ -129,19 +129,20 @@ input[type="checkbox"] {
 }
 
 .modal {
-    width: 60%;
+    width: 50%;
     min-width: 350px;
     min-height: 200px;
-    background-color: #ffffffa1;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 50px;
+    background-color: #ffffff9e;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 30px;
     border-radius: 20px;
 }
 
 .fechar {
     position: absolute;
     border: none;
+    font-weight: bold;
     top: -10px;
     right: -10px;
     width: 30px;
